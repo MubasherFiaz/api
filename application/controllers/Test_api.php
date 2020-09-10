@@ -16,7 +16,7 @@ class Test_api extends CI_Controller {
 
 			if($data_action == "Delete")
 			{
-				$api_url = "http://localhost/api/delete";
+				$api_url = "http://localhost/api/api/delete";
 
 				$form_data = array(
 					'id'		=>	$this->input->post('user_id')
@@ -43,7 +43,7 @@ class Test_api extends CI_Controller {
 
 			if($data_action == "Edit")
 			{
-				$api_url = "http://localhost/api/update";
+				$api_url = "http://localhost/api/api/update";
 
 				$form_data = array(
 					'first_name'		=>	$this->input->post('first_name'),
@@ -75,7 +75,7 @@ class Test_api extends CI_Controller {
 
 			if($data_action == "fetch_single")
 			{
-				$api_url = "http://localhost/api/fetch_single";
+				$api_url = "http://localhost/api/api/fetch_single";
 
 				$form_data = array(
 					'id'		=>	$this->input->post('user_id')
@@ -104,7 +104,7 @@ class Test_api extends CI_Controller {
 
 			if($data_action == "Insert")
 			{
-				$api_url = "http://localhost/api/insert";
+				$api_url = "http://localhost/api/api/insert";
 			
 
 				$form_data = array(
@@ -135,7 +135,7 @@ class Test_api extends CI_Controller {
 
 			if($data_action == "fetch_all")
 			{
-				$api_url = "http://localhost/api";
+				$api_url = "http://localhost/api/api";
 
 				$client = curl_init($api_url);
 
