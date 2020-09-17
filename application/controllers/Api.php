@@ -46,17 +46,15 @@ class Api extends CI_Controller {
 	
 	function fetch_single()
 	{
-		
+		echo "run <br>";
+			
 		if($this->input->post('id'))
 		{
-			$data = $this->api_model->fetch_single_user($this->input->post('id'));
-
-			foreach($data as $row)
-			{
-				$output['first_name'] = $row['first_name'];
-				$output['last_name'] = $row['last_name'];
-			}
-			echo json_encode($output);
+			echo "string <br>";
+			//exit();
+		}
+		if ($this->input->post('key')=='q4lkCzCLYJFP0DFzVTaikWamD8daK7bRk') {
+			echo "valid key";
 		}
 	}
 
